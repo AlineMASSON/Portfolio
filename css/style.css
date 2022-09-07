@@ -17,7 +17,6 @@ foncé : #615c73
 body {
     font-family: 'Roboto Flex', sans-serif;
     display: flex;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -26,13 +25,13 @@ body {
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    padding: 4vw;
     font-size: 2.5vh;
     font-weight: 200;
+    letter-spacing: 0.05rem;
 }
 
 .dots,
-#about,
+#home,
 #skills,
 #projects,
 #contact,
@@ -52,7 +51,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    padding: 4vw;
 }
 
 #home > nav {
@@ -85,9 +84,6 @@ header a {
 .home__discover {
     border: var(--light) 0.2vh solid;
     border-radius: 5vh;
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center; */
 }
 
 .home__discover > a {
@@ -109,9 +105,32 @@ header a {
 /* --- About --- */
 
 #about {
-    /* display: flex; */
+    display: flex;
     background-color: var(--dark);
     color: var(--light);
+}
+
+.about__text {
+    flex: 1;
+    width: 92vw;
+    padding: 4vw;
+}
+
+.about__title {
+    margin-bottom: 3vh;
+}
+
+.about__p {
+    line-height: 1.6;
+}
+
+.about__img {
+    flex: 1;
+    align-self: center;
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* === FOOTER === */
@@ -182,17 +201,11 @@ header a {
 
     .about__title {
         font-size: 15vw;
-        width: 75%;
-        margin-bottom: 3vh;
-    }
-
-    .about__p {
-        line-height: 1.6;
+        width: 70%;
     }
 
     .about__img {
-        height: 25%;
-        align-self: center;
+        width: 100%;       
     }
     
 }
@@ -225,7 +238,24 @@ header a {
     .home__discover {
         padding: 3vh 6vw;
     }
-    
+
+    /* === MAIN === */
+
+    /* --- About --- */
+
+    #about {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about__title {
+        font-size: 15vw;
+        width: 70%;
+    }
+
+    .about__img {
+        width: 100%;       
+    }
 }
 
 /* === DESKTOP === */
@@ -250,5 +280,26 @@ header a {
 
     .home__discover {
         padding: 3vh 2vw;
+    }
+
+    /* === MAIN === */
+
+    /* --- About --- */
+
+    #about {
+        justify-content: space-between;
+    }
+
+    .about__text {
+        align-self: center;
+    }
+
+    .about__title {
+        font-size: 5vw;
+        width: 25vw;
+    }
+
+    .about__img {
+        height: 50%;       
     }
 }
