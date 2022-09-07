@@ -14,8 +14,10 @@ foncé : #615c73
 /* === GLOBAL === */
 
 body {
-    font-family: 'Roboto Flex', sans-serif;
     display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+    width: 500vw;
+    height: 100vh;
 }
 
 /* === COMMUN === */
@@ -25,11 +27,20 @@ body {
     padding: 4vw;
     box-sizing: border-box;
     font-size: 2.5vh;
+    font-weight: 200;
 }
 
 .dots,
-main,
+#skills,
+#projects,
+#contact,
 footer {
+    display: none;
+}
+
+.about__text,
+.about__img,
+#about {
     display: none;
 }
 
@@ -61,12 +72,10 @@ header {
 }
 
 .home__name {
-    font-weight: 200;
     align-self: flex-start;
 }
 
 .home__title {
-    font-weight: 200;
     align-self: flex-end;
     text-align: end;
 }
@@ -79,22 +88,30 @@ header a {
 .home__discover {
     border: var(--light) 0.2vh solid;
     border-radius: 5vh;
+}
+
+.home__discover > a,
+.home__discover > a > img {
+    padding: 0 1vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.home__discover > a,
-.home__discover > img {
-    padding: 0 1vh;
-}
-
-.home__discover > img {
+.home__discover > a > img {
     height: 3vh;
     width: auto;
 }
 
 /* === MAIN === */
+
+/* === About ===*/
+
+#about {
+    /* display: flex; */
+    background-color: var(--dark);
+    color: var(--light);
+}
 
 /* === FOOTER === */
 /* .information {
@@ -149,6 +166,30 @@ header a {
     
     .home__discover {
         padding: 3vh 11vw;
+    }
+
+    /* === MAIN === */
+
+    /* === About ===*/
+
+    #about {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about__title {
+        font-size: 15vw;
+        width: 75%;
+        margin-bottom: 3vh;
+    }
+
+    .about__p {
+        line-height: 1.6;
+    }
+
+    .about__img {
+        height: 25%;
+        align-self: center;
     }
     
 }
