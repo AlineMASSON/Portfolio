@@ -13,11 +13,19 @@ foncé : #615c73
 
 /* === GLOBAL === */
 
+html {
+    max-height: 100vh;
+    background-color: darkgreen;
+}
 body {
     display: flex;
     font-family: 'Roboto Flex', sans-serif;
     width: 500vw;
-    height: 100vh;
+    max-height: 100vh;
+}
+
+main {
+    display: flex;
 }
 
 /* === COMMUN === */
@@ -30,7 +38,7 @@ body {
     font-weight: 200;
 }
 
-.dots,
+/* .dots,
 #skills,
 #projects,
 #contact,
@@ -42,15 +50,41 @@ footer {
 .about__img,
 #about {
     display: none;
+} */
+
+#home > *,
+#about > *,
+#skills > *,
+#projects > *,
+#contact > * {
+    display: none;
 }
 
+#home {
+    background-color: blue;
+}
+#about {
+    background-color: blueviolet;
+}
+#skills {
+    background-color: rgb(43, 226, 165);
+}
+#projects {
+    background-color: rgb(226, 43, 195);
+}
+#contact {
+    background-color: rgb(226, 208, 43);
+}
+.dots {
+    background-color: olive;
+}
 /* === HEADER === */
 
 header {
-    background: url(../images/essaiIMAG0097.jpg);
+    /* background: url(../images/essaiIMAG0097.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     color: var(--light);
     display: flex;
     flex-direction: column;
