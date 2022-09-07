@@ -1,59 +1,39 @@
-
-
-/* === GLOBAL === */
-
 html {
-    height: 100vh;
-    width: 100vw;
-    background-color: darkgreen;
-    box-sizing: border-box;
+    
 }
-.body {
-    position: relative;
+body {
+    column-count: 5;
+    gap: 0;
+
+
+
 }
 .page {
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
+
 }
 
-
-/* === COMMUN === */
-
-
-#home > *,
 #about > *,
 #skills > *,
 #projects > *,
 #contact > *,
-.dots {
+#home > * {
     display: none;
 }
 
-#home {
-    background-color: blue;
-    left: 0;
-}
 #about {
-    background-color: blueviolet;
-    left: 100vw;
+    background-color: blue;
 }
 #skills {
-    background-color: rgb(43, 226, 165);
-    left: 200vw;
+    background-color: red;
 }
 #projects {
-    background-color: rgb(226, 43, 195);
-    left: 300vw;
-
+    background-color: yellow;
 }
 #contact {
-    background-color: rgb(226, 208, 43);
-    left: 400vw;
-
+    background-color: green;
 }
-.dots {
-    background-color: olive;
+#home {
+    background-color: black;
 }

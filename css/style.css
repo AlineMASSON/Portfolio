@@ -9,36 +9,30 @@ foncé : #615c73
     --dark: #615c73;
     --extra-light: #fff;
     --extra-dark: #000;
+
 }
 
 /* === GLOBAL === */
 
-html {
-    max-height: 100vh;
-    background-color: darkgreen;
-}
 body {
-    display: flex;
     font-family: 'Roboto Flex', sans-serif;
-    width: 500vw;
-    max-height: 100vh;
-}
-
-main {
     display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* === COMMUN === */
 .page {
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     padding: 4vw;
-    box-sizing: border-box;
     font-size: 2.5vh;
     font-weight: 200;
 }
 
-/* .dots,
+.dots,
+#about,
 #skills,
 #projects,
 #contact,
@@ -46,50 +40,19 @@ footer {
     display: none;
 }
 
-.about__text,
-.about__img,
-#about {
-    display: none;
-} */
-
-#home > *,
-#about > *,
-#skills > *,
-#projects > *,
-#contact > * {
-    display: none;
-}
-
-#home {
-    background-color: blue;
-}
-#about {
-    background-color: blueviolet;
-}
-#skills {
-    background-color: rgb(43, 226, 165);
-}
-#projects {
-    background-color: rgb(226, 43, 195);
-}
-#contact {
-    background-color: rgb(226, 208, 43);
-}
-.dots {
-    background-color: olive;
-}
 /* === HEADER === */
 
 header {
-    /* background: url(../images/essaiIMAG0097.jpg);
+    background: url(../images/essaiIMAG0097.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     color: var(--light);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
 }
 
 #home > nav {
@@ -122,24 +85,28 @@ header a {
 .home__discover {
     border: var(--light) 0.2vh solid;
     border-radius: 5vh;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
 }
 
-.home__discover > a,
-.home__discover > a > img {
-    padding: 0 1vh;
+.home__discover > a {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 
 .home__discover > a > img {
     height: 3vh;
     width: auto;
+    padding-left: 1vh;
+    align-items: center;
+
+
 }
 
 /* === MAIN === */
 
-/* === About ===*/
+/* --- About --- */
 
 #about {
     /* display: flex; */
@@ -192,10 +159,12 @@ header a {
     }
     .home__name {
         font-size: 25vw;
+        width: 90%;
     }
 
     .home__title {
         font-size: 12vw;
+        width: 90%;
     }
     
     .home__discover {
@@ -204,7 +173,7 @@ header a {
 
     /* === MAIN === */
 
-    /* === About ===*/
+    /* --- About --- */
 
     #about {
         flex-direction: column;
