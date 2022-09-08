@@ -121,6 +121,12 @@ header a {
     background-repeat: no-repeat;
 }
 
+/* --- Commun Skills, Projects, Contact --- */
+
+.title {
+    font-weight: 300;
+}
+
 /* --- Skills --- */
 
 #skills {
@@ -153,6 +159,50 @@ header a {
     margin: 2vw;
 }
 
+/* --- Projects --- */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 4vw;
+}
+
+.projects__title {
+    text-align: center;
+}
+
+.projects__div {
+    display: flex;
+    flex: 1;
+    margin-top: 3vh;
+}
+
+.projects__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project__img {
+    align-self: center;
+    width: 100%;
+    border: var(--light) 0.4vh solid;
+    border-radius: 3vh;
+    background-image: url(../images/loader-custom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.project__text {
+    margin-top: 1vh;
+}
+
+.project__text > h3 {
+    font-weight: 300;
+}
 
 /* === FOOTER === */
 /* .information {
@@ -229,17 +279,42 @@ header a {
         width: 100%;       
     }
 
-    /* --- Skills --- */
+    /* --- Commun Skills, Projects, Contact --- */
 
-    .skills__title {
+    .title {
         font-size: 10vw;
     }
+
+    /* --- Skills --- */
 
     .div__title {
         font-size: 8vw;
         margin: 4vw 0;
     }
     
+    /* --- Projects --- */
+
+    .projects__div {
+        flex-direction: column;
+        align-self: center;
+        width: 80%;
+    }
+
+    .project__img {
+        flex: 1;
+    }
+
+    .project__text {
+        margin-bottom: 2vh;
+    }
+
+    .project__text > h3 {
+        font-size: 6vw;
+    }
+
+    .project__text > p {
+        font-size: 4vw;
+    }
 }
 
 /* === TABLET === */
@@ -288,15 +363,41 @@ header a {
     .about__img {
         width: 100%;       
     }
+
+    /* --- Commun Skills, Projects, Contact --- */
+
+    .title {
+        font-size: 8vw;
+    }
         
     /* --- Skills --- */
 
-    .skills__title {
-        font-size: 8vw;
-    }
-
     .div__title {
         font-size: 6vw;
+    }
+
+    /* --- Projects --- */
+
+    .projects__div {
+        flex-direction: column;
+        align-self: center;
+        width: 60%;
+    }
+
+    .project__img {
+        flex: 1;
+    }
+
+    .project__text {
+        margin-bottom: 2vh;
+    }
+
+    .project__text > h3 {
+        font-size: 4vw;
+    }
+    
+    .project__text > p {
+        font-size: 2.5vw;
     }
 }
 
@@ -345,11 +446,13 @@ header a {
         height: 50%;       
     }
 
-    /* --- Skills --- */
+    /* --- Commun Skills, Projects, Contact --- */
 
-    .skills__title {
-        font-size: 6vh;
+    .title {
+        font-size: 6vw;
     }
+
+    /* --- Skills --- */
 
     .skills__div {
         margin: 3vh;
@@ -364,12 +467,27 @@ header a {
         width: min(12vh, 6vw);
         margin: 2vh;
     }
+
+    /* --- Projects --- */
+
+    .projects__div {
+        width: 100%;
+    }
+
+    .projects__item {
+        margin: 0 2vw;
+        justify-content: center;
+    }
+
+    .project__img {
+        height: 50%;
+    }
 }
 
 .dots,
 #home,
 #about,
-#projects,
+#skills,
 #contact,
 footer {
     display: none;
