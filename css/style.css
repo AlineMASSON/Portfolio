@@ -9,7 +9,6 @@ foncé : #615c73
     --dark: #615c73;
     --extra-light: #fff;
     --extra-dark: #000;
-
 }
 
 /* === GLOBAL === */
@@ -28,15 +27,6 @@ body {
     font-size: 2.5vh;
     font-weight: 200;
     letter-spacing: 0.05rem;
-}
-
-.dots,
-#home,
-#skills,
-#projects,
-#contact,
-footer {
-    display: none;
 }
 
 /* === HEADER === */
@@ -96,8 +86,6 @@ header a {
     width: auto;
     padding-left: 1vh;
     align-items: center;
-
-
 }
 
 /* === MAIN === */
@@ -132,6 +120,39 @@ header a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* --- Skills --- */
+
+#skills {
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--light);
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills__div {
+    margin-top: 4vw;
+}
+
+.div__title {
+    margin: 4vw 0;
+}
+
+.skills__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: start;
+}
+
+.skills__item > img {
+    width: min(18vw, 9vh);
+    margin: 2vw;
+}
+
 
 /* === FOOTER === */
 /* .information {
@@ -207,6 +228,17 @@ header a {
     .about__img {
         width: 100%;       
     }
+
+    /* --- Skills --- */
+
+    .skills__title {
+        font-size: 10vw;
+    }
+
+    .div__title {
+        font-size: 8vw;
+        margin: 4vw 0;
+    }
     
 }
 
@@ -256,6 +288,16 @@ header a {
     .about__img {
         width: 100%;       
     }
+        
+    /* --- Skills --- */
+
+    .skills__title {
+        font-size: 8vw;
+    }
+
+    .div__title {
+        font-size: 6vw;
+    }
 }
 
 /* === DESKTOP === */
@@ -302,4 +344,33 @@ header a {
     .about__img {
         height: 50%;       
     }
+
+    /* --- Skills --- */
+
+    .skills__title {
+        font-size: 6vh;
+    }
+
+    .skills__div {
+        margin: 3vh;
+    }
+
+    .div__title {
+        font-size: min(3vw, 5vh);
+        margin: 3vh 0;
+    }
+
+    .skills__item > img {
+        width: min(12vh, 6vw);
+        margin: 2vh;
+    }
+}
+
+.dots,
+#home,
+#about,
+#projects,
+#contact,
+footer {
+    display: none;
 }
