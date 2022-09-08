@@ -1,3 +1,9 @@
-<?xml version="1.0" standalone="no"?>
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
-        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> <svg style="color: rgb(97, 92, 115);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2C6.49,2,2,6.49,2,12s4.49,10,10,10s10-4.49,10-10S17.51,2,12,2z M11,10V6h2v4h3l-4,4l-4-4H11z M17,17H7v-2h10V17z" fill="#615c73"></path></svg> 
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path id="svg_2" d="m10,0c-5.51,0 -10,4.49 -10,10s4.49,10 10,10s10,-4.49 10,-10s-4.49,-10 -10,-10zm-1,8l0,-4l2,0l0,4l3,0l-4,4l-4,-4l3,0zm6,7l-10,0l0,-2l10,0l0,2z" fill="#615c73"/>
+  </g>
+ </g>
+
+</svg>

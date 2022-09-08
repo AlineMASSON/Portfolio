@@ -19,6 +19,10 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* === COMMUN === */
 .page {
     box-sizing: border-box;
@@ -44,6 +48,8 @@ header {
     padding: 4vw;
 }
 
+/* --- Home --- */
+
 #home > nav {
     display: flex;
 }
@@ -67,7 +73,6 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: var(--light);
 }
 
@@ -205,36 +210,41 @@ header a {
 }
 
 /* === FOOTER === */
-/* .information {
+
+/* --- Contact --- */
+
+#contact {
     display: flex;
-    justify-content: space-evenly;
-    clear: left;
-    padding: 1em 0;
-}
-
-.information .information__item {
-    color: var(--dark);
-    text-decoration: none;
-}
-
-.information__item--icon {
-    background-color: var(--dark);
-    color: var(--light);
-    font-size: 1.35em;
-}
-
-.information a:hover {
-    background-color: var(--dark);
-    color: var(--light);
-    border-radius: 2rem;
-    transition: 0.2s;
-}
-
-.information a:hover .information__item--icon {
     background-color: var(--light);
     color: var(--dark);
-    transition: 0.2s;
-} */
+}
+
+.contact__content {
+    padding: 4vw;
+}
+
+.contact__content > address {
+    padding-top: 2vw;
+}
+
+.contact__item {
+    display: flex;
+    color: var(--dark);
+    align-items: center;
+}
+
+.item__img {
+    margin-right: 2vw;
+}
+
+.contact__img {
+    flex: 1;
+    background-image: url(../images/IMAG0499.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
 
 /** === RESPONSIVE === **/
 
@@ -243,6 +253,8 @@ header a {
 @media screen and (max-width:767px) {
 
     /* === HEADER === */
+
+    /* --- Home --- */
 
     #home > nav {
         display: none;
@@ -315,6 +327,22 @@ header a {
     .project__text > p {
         font-size: 4vw;
     }
+
+    /* === FOOTER === */
+
+    /* --- Contact --- */
+
+    #contact {
+        flex-direction: column;
+    }
+
+    .contact__item {
+        margin-top: 4vw;
+    }
+
+    .item__img {
+        width: 10vw;
+    }
 }
 
 /* === TABLET === */
@@ -322,6 +350,8 @@ header a {
 @media screen and (min-width:768px) and (max-width:1023px) {
 
     /* === HEADER === */
+
+    /* --- Home --- */
 
     #home > nav {
         align-self: center;
@@ -399,6 +429,22 @@ header a {
     .project__text > p {
         font-size: 2.5vw;
     }
+
+    /* === FOOTER === */
+
+    /* --- Contact --- */
+
+    #contact {
+        flex-direction: column;
+    }
+
+    .contact__item {
+        margin-top: 4vw;
+    }
+
+    .item__img {
+        width: 6vw;
+    }
 }
 
 /* === DESKTOP === */
@@ -406,6 +452,8 @@ header a {
 @media screen and (min-width:1024px) {
     
     /* === HEADER === */
+
+    /* --- Home --- */
 
     #home > nav {
         display: flex;
@@ -482,13 +530,32 @@ header a {
     .project__img {
         height: 50%;
     }
+
+    /* === FOOTER === */
+
+    /* --- Contact --- */
+
+    .contact__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__content > address {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .item__img {
+        width: 6vh;
+    }
 }
 
 .dots,
 #home,
 #about,
 #skills,
-#contact,
-footer {
+#projects {
     display: none;
 }
