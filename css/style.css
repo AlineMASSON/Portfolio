@@ -534,6 +534,115 @@ a.contact__item:hover {
     }
 }
 
+/* === SMARTPHONE & TABLET LANDSCAPE === */
+
+
+@media screen and (max-width:1023px) and (orientation:landscape) {
+
+    /* === HEADER === */
+
+    /* --- Home --- */
+
+    #home > nav {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .home__nav {
+        justify-content: space-between;
+    }
+
+    .home__name {
+        width: 50%;
+        font-size: 10vw;
+    }
+
+    .home__title {
+        width: 75%;
+        font-size: 5vw;
+    }
+
+    .home__discover {
+        padding: 3vh 3vw;
+    }
+
+    /* === MAIN === */
+
+    /* --- About --- */
+
+    #about {
+        justify-content: space-between;
+    }
+
+    .about__text {
+        align-self: center;
+    }
+
+    .about__title {
+        font-size: 13vh;
+        width: 70%;
+    }
+
+    .about__img {
+        height: 100%;
+    }
+
+    /* --- Commun Skills, Projects, Contact --- */
+
+    .title {
+        font-size: 4vw;
+    }
+        
+    /* --- Skills --- */
+
+    .div__title {
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    /* --- Projects --- */
+
+    .projects__div {
+        justify-content: space-between;
+    }
+
+    .projects__item {
+        width: 30%;
+        flex: none;
+    }
+
+    .project__img {
+        flex: 1;
+    }
+
+    .project__text {
+        margin-bottom: 2vh;
+    }
+
+    .project__text > h3 {
+        font-size: 5vh;
+    }
+    
+    .project__text > p {
+        font-size: 2.5vh;
+    }
+
+    /* === FOOTER === */
+
+    /* --- Contact --- */
+
+    address {
+        display: flex;
+        flex-direction: column;
+        height: 85%;
+        justify-content: space-around;
+    }
+
+    .item__img {
+        width: 8vh;
+    }
+}
+
 /* === DESKTOP === */
 
 @media screen and (min-width:1024px) {
