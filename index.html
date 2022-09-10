@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- === Favicon === -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
     <!-- === Police === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!--**
     <div class="dots">
         <a href="#home"><div class="dot"></div></a>
         <a href="#about"><div class="dot"></div></a>
@@ -30,26 +31,27 @@
         <a href="#projects"><div class="dot"></div></a>
         <a href="#contact"><div class="dot"></div></a>
     </div><!-- #.dots -->
-
-    <header class="page" id="home">
-        <nav>
-            <ul class="home__nav">
-                <li class="nav__item"><a href="#about">À Propos</a></li>
-                <li class="nav__item"><a href="#skills">Mes compétences</a></li>
-                <li class="nav__item"><a href="#projects">Mes projets</a></li>
-                <li class="nav__item"><a href="#contact">Contactez-moi</a></li>
-            </ul>
-        </nav>
-        <h1 class="home__name">Aline Masson</h1>
-        <h2 class="home__title">Développeuse web React et PHP</h2>
-        <div class="home__discover">
-            <a href="#about">Me découvrir
-                <img src="images/arrow-right-custom.svg" alt="Flèche vers la droite">
-            </a>
-        </div>
-    </header><!-- #home -->
     
-    <main>
+    <main class="container">
+
+        <section class="page" id="home">
+            <nav>
+                <ul class="home__nav">
+                    <li class="nav__item"><a href="#about">À Propos</a></li>
+                    <li class="nav__item"><a href="#skills">Mes compétences</a></li>
+                    <li class="nav__item"><a href="#projects">Mes projets</a></li>
+                    <li class="nav__item"><a href="#contact">Contactez-moi</a></li>
+                </ul>
+            </nav>
+            <h1 class="home__name">Aline Masson</h1>
+            <h2 class="home__title">Développeuse web React et PHP</h2>
+            <div class="home__discover">
+                <a href="#about">Me découvrir
+                    <!-- <img src="images/arrow-right-custom.svg" alt="Flèche vers la droite"> -->
+                </a>
+            </div>
+        </section><!-- #home -->
+        
         <section class="page" id="about">
             <div class="about__text">
                 <h2 class="about__title">Bonjour, c'est Aline.</h2>
@@ -121,41 +123,41 @@
             </div><!-- .projects__div -->
 
         </section><!-- #projects -->
-    </main>
-
-    <footer class="page" id="contact">
-        <div class="contact__content">
-            <h2 class="title contact__title">Contactez-moi</h2>
-            <address>
-                <div class="contact__item">
-                    <img class="item__img" src="images/house-door-fill-custom (1).svg" alt="Icône Maison">
-                    France, Île-de-France, Oise, Vosges, Télétravail
-                </div><!-- .contact__item -->
-                <a class="contact__item" href="mailto:lacmas03@gmail.com">
-                    <img class="item__img" src="images/maildotru-custom (1).svg" alt="Icône Email">
-                    lacmas03@gmail.com
-                </a><!-- .contact__item -->
-                <a class="contact__item" href="tel:+3362104879">
-                    <img class="item__img" src="images/phone-custom (1).svg" alt="">
-                    +33 6 62 10 48 79
-                </a><!-- .contact__item -->
-                <a class="contact__item" href="https://www.linkedin.com/in/aline-masson-139758204/">
-                    <img class="item__img" src="images/linkedin-custom (1).svg" alt="Icône Linkedin">
-                    aline-masson-139758204
-                </a><!-- .contact__item -->
-                <a class="contact__item" href="https://github.com/AlineMASSON">
-                    <img class="item__img" src="images/github-custom (1).svg" alt="Icône Github">
-                    AlineMASSON
-                </a><!-- .contact__item -->
-                <a class="contact__item" href="download/CV.pdf" download="Aline-MASSON_Developpeuse_React-PHP.pdf">
-                    <img class="item__img" src="images/download_for_offline-custom (1).svg" alt="Icône Téléchargement">
-                    Télécharger mon CV
-                </a><!-- .contact__item -->
-            </address>
-        </div><!-- .contact__left -->
-        <div class="contact__img">
-        </div><!-- .contact__img -->
-    </footer><!-- #contact -->
+        
+        <section class="page" id="contact">
+            <div class="contact__content">
+                <h2 class="title contact__title">Contactez-moi</h2>
+                <address>
+                    <div class="contact__item">
+                        <img class="item__img" src="images/house-door-fill-custom (1).svg" alt="Icône Maison">
+                        France, Île-de-France, Oise, Vosges, Télétravail
+                    </div><!-- .contact__item -->
+                    <a class="contact__item" href="mailto:lacmas03@gmail.com">
+                        <img class="item__img" src="images/maildotru-custom (1).svg" alt="Icône Email">
+                        lacmas03@gmail.com
+                    </a><!-- .contact__item -->
+                    <a class="contact__item" href="tel:+3362104879">
+                        <img class="item__img" src="images/phone-custom (1).svg" alt="">
+                        +33 6 62 10 48 79
+                    </a><!-- .contact__item -->
+                    <a class="contact__item" href="https://www.linkedin.com/in/aline-masson-139758204/">
+                        <img class="item__img" src="images/linkedin-custom (1).svg" alt="Icône Linkedin">
+                        aline-masson-139758204
+                    </a><!-- .contact__item -->
+                    <a class="contact__item" href="https://github.com/AlineMASSON">
+                        <img class="item__img" src="images/github-custom (1).svg" alt="Icône Github">
+                        AlineMASSON
+                    </a><!-- .contact__item -->
+                    <a class="contact__item" href="download/CV.pdf" download="Aline-MASSON_Developpeuse_React-PHP.pdf">
+                        <img class="item__img" src="images/download_for_offline-custom (1).svg" alt="Icône Téléchargement">
+                        Télécharger mon CV
+                    </a><!-- .contact__item -->
+                </address>
+            </div><!-- .contact__left -->
+            <div class="contact__img">
+            </div><!-- .contact__img -->
+        </section><!-- #contact -->
+    </main><!-- .container -->
 </body>
 
 </html>
