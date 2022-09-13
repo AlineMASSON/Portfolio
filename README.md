@@ -1,3 +1,3 @@
 # Bienvenue sur mon Portfolio
 
-[Lien](https://alinemasson.github.io/AlineMASSON/ "Clique ici pour le voir :)").
+[Clique ici pour le voir :)](https://alinemasson.github.io/AlineMASSON/ "alinemasson.github.io/AlineMASSON/").
