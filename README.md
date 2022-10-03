@@ -1,4 +1,3 @@
-# Bienvenue sur mon Portfolio
+# Bienvenue sur mon Portfolio :cherry_blossom:
 
-[Clique ici pour le voir :)](https://alinemasson.github.io/portfolio/ "alinemasson.github.io/portfolio/").
-
+[Voir mon portfolio :sparkles:](https://alinemasson.github.io/portfolio/ "alinemasson.github.io/portfolio/")
